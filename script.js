@@ -19,11 +19,11 @@ function solveEquation(a, b, c) {
     const discriminant = b * b - 4 * a * c;
     
     if (discriminant > 0) {
-        const x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-        const x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        const x1 = ((-b + Math.sqrt(discriminant)) / (2 * a)).toFixed(2);
+        const x2 = ((-b - Math.sqrt(discriminant)) / (2 * a)).toFixed(2);
         return `The solutions are: x1 = ${x1}, x2 = ${x2}`;
     } else if (discriminant === 0) {
-        const x = -b / (2 * a);
+        const x = -b / (2 * a).toFixed(2);
         return `There is one unique solution: x = ${x}`;
     } else {
         const realPart = (-b / (2 * a)).toFixed(2);
